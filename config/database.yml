@@ -43,7 +43,7 @@ development:
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  port: 5433
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: geojsonapi_production
-  username: geojsonapi
+  database: dev77gcce2mtv
+  username: sleneijecmdism
   password: <%= ENV["GEOJSONAPI_DATABASE_PASSWORD"] %>
