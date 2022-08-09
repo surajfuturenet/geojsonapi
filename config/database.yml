@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: d3mfccepk6tfc1
-  username: txzswhwsaokeir
+  database: d8kvvrqad64t6c
+  username: bjkbahysmwnowt
   password: <%= ENV["GEOJSONAPI_DATABASE_PASSWORD"] %>
