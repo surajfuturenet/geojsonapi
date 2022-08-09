@@ -2,7 +2,7 @@ module Api
 	module V1
 		class ConservationsController < ApplicationController
 			  # Only allow a list of trusted parameters 
-			ALLOWED_DATA = %[name address polygonid partid pointid longitude latitude descriptions].freeze
+			ALLOWED_DATA = %[name address polygonid partid pointid longitude latitude description].freeze
 
 			def index
 				convervations = Conservation.all
