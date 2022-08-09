@@ -1,24 +1,63 @@
-# README
+This a API build for managing GEOJSON Data. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+JSON Request and Response Data Types
 
-Things you may want to cover:
+**Data Types**
+    name = string
+    address = string
+    polygonid = integer
+    partid  = integer
+    pointid = integer
+    longitude = float
+    latitude = float
+    description = string
+    
+**HTTP METHODS**
 
-* Ruby version
+**Get All GeoJSON Data**
+HTTP METHOD :- GET
+URL :- https://sleepy-wave-43744.herokuapp.com/api/v1/conservations
 
-* System dependencies
 
-* Configuration
+**GET GEOJSON Data by ID**
+HTTP METHOD :- GET
+URL :- https://sleepy-wave-43744.herokuapp.com/api/v1/conservations/:id
 
-* Database creation
+**Create a New Entry for GEOJSON Data**
+HTTP METHOD :- POST
+URL :- https://sleepy-wave-43744.herokuapp.com/api/v1/conservations
+JSON Request Data Format :- 
+{
+  "name" : "",
+  "address" : "",
+  "polygonid" : "",
+  "partid" : "",
+  "pointid" : "",
+  "longitude" : "",
+  "latitude" : "",
+  "description" : ""
+}
 
-* Database initialization
+Note:- Any other data feilds will be ignored. 
 
-* How to run the test suite
+**Update a Entry of GEOJSON Data**
+HTTP METHOD :- PUT
+URL :- https://sleepy-wave-43744.herokuapp.com/api/v1/conservations/:id
+JSON Request Data Format :- 
+{
+  "name" : "",
+  "address" : "",
+  "polygonid" : "",
+  "partid" : "",
+  "pointid" : "",
+  "longitude" : "",
+  "latitude" : "",
+  "description" : ""
+}
 
-* Services (job queues, cache servers, search engines, etc.)
+Note:- Any other data feilds will be ignored. 
 
-* Deployment instructions
+**Delete a Entry for GEOJSON Data**
+HTTP METHOD :- DELETE
+URL :- https://sleepy-wave-43744.herokuapp.com/api/v1/conservations/:id
 
-* ...
